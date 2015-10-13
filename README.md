@@ -8,7 +8,7 @@
 Укажите ваши параметры подлючения
 
 <?$APPLICATION->IncludeComponent(
-	"petrit:jssip",
+	"sanshung:jssip",
 	".default",
 	Array(
 		"WS_SERVER" => "sip.localhost.Asterisk",
