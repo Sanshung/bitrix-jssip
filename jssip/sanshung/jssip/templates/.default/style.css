@@ -1,0 +1,213 @@
+/***************** phone ***************/
+/*******************************************/
+#phone {
+  position: relative;
+  float: left;
+  width: 270px;
+  padding: 20px 10px;
+  background: url("images/transparent-25-bg.png") repeat;
+  border-radius: 0 0 10px 0;
+  margin-bottom: 20px;
+}
+
+
+#phone .line-separator {
+  clear: both;
+  height: 1px;
+  background: url("images/dialpad-buttons-horizontal-separator.png") no-repeat;
+}
+
+#phone .line-separator-black {
+  clear: both;
+  height: 1px;
+  background: url("images/dialpad-buttons-horizontal-separator-black.png") no-repeat;
+}
+
+
+/* status */
+
+#phone .status {
+  position: relative;
+  padding: 10px;
+  font-family: monospace;
+  /* width interno: 234px */
+  background: url("images/transparent-50-bg.png") repeat;
+  border-radius: 5px;
+  color: #000;
+  opacity: 0.8;
+}
+
+#phone .status > div + div {
+  margin-top: 10px;
+}
+
+#phone .status span.field {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#phone .status span.value {
+  font-size: 14px;
+  font-weight: bold;
+}
+#phone .status #conn-status.connected span.value {
+  color: #C49300;
+}
+#phone .status #conn-status.registered span.value {
+  color: #008000;
+}
+#phone .status #conn-status.disconnected span.value {
+  color: #FF2200;
+}
+
+#phone .status input[type="checkbox"] {
+  position: relative;
+  top: 2px;
+}
+
+#phone .status span.value.user {
+  font-size: 14px;
+  color: #008000;
+}
+
+
+/* controls */
+#phone .controls {
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 18px;
+  padding-bottom: 10px;
+  background: url("images/transparent-black-75-bg.png") repeat;
+  border-radius: 5px;
+}
+
+
+#phone .controls .ws-disconnected {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.7;
+  background: #333;
+  border-radius: 5px;
+  z-index: 100;
+  display: none;
+}
+
+/* dialbox */
+
+#phone .dialbox {
+  position: relative;
+  font-family: monospace;
+}
+
+#phone .dialbox input.destination {
+  display: block;
+  position: relative;
+  width: 186px;
+  padding: 0 5px 0 40px;
+  height: 43px;
+  line-height: 43px;
+  border: 1px solid #666;
+  margin: 0;
+  outline: none; /* Remove the border when has the focus */
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: bold;
+  color: #FFF;
+  text-align: right;
+  letter-spacing: 1px;
+  background: center url("images/dialed-number.png") repeat-x;
+  opacity: 0.9;
+  border-radius: 5px;
+}
+#phone .dialbox input.destination:hover {
+  border-color: #EEE;
+}
+#phone .dialbox input.destination:focus {
+  border-color: #EEE;
+  opacity: 1;
+}
+
+#phone .dialbox .to {
+  position: absolute;
+  z-index: 10;
+  top: 2px;
+  padding-left: 8px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 150%;
+  color: #FFF;
+  font-family: inherit;
+  opacity: 0.5;
+}
+
+#phone .dialbox .dial-buttons {
+ position: relative;
+ margin-top: 10px;
+}
+
+#phone .dialbox .dial-buttons .button {
+  height: 50px;
+  line-height: 50px;
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #FFF;
+  opacity: 0.8;
+  letter-spacing: 10px;
+  text-align: center;
+  user-select: none;
+}
+#phone .dialbox .dial-buttons .button:hover {
+  color: #FFF;
+  opacity: 1;
+  text-shadow: #FFF 0px 0px 5px;
+}
+#phone .dialbox .dial-buttons .button:active {
+  color: #00FF00;
+}
+
+
+/* dialpad */
+
+#phone .dialpad {
+  position: relative;
+  margin-top: 10px;
+  user-select: none;
+}
+
+#phone .dialpad .line {
+  height: 50px;
+  user-select: none;
+}
+
+#phone .dialpad .button {
+  float: left;
+  height: 50px;
+  width: 76px;
+  color: #FFF;
+  opacity: 0.8;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+}
+
+#phone .dialpad .button:hover {
+  color: #FFF;
+  opacity: 1;
+  text-shadow: #FFF 0px 0px 5px;
+}
+
+#phone .dialpad .button:active {
+  color: #00FF00;
+}
