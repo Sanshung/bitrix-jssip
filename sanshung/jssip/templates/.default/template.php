@@ -12,7 +12,7 @@
 /** @var CBitrixComponent $component */
 $this->setFrameMode(true);
 ?>
-<? $APPLICATION->AddHeadString("<script src='/bitrix/components/petrit/jssip/templates/.default/jssip/dist/jssip.js'></script>",true)?>
+<? $APPLICATION->AddHeadString("<script src='/bitrix/components/sanshung/jssip/templates/.default/jssip/dist/jssip.js'></script>",true)?>
 
 <input type="hidden" id="ws_servers" value="<?=$arParams[WS_SERVER]?>">
 <input type="hidden" id="outboundproxy" value="<?=$arParams[OUTBOUND_PROXY]?>">
